@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Trying CSS Selectors </title>
+
+    <style media="screen">
+      body{
+        background-color: #fe99b9
+      }
+
+      a:visited {
+        color: #6b001e;
+      }
+
+      a:hover {
+        background-color: #fedeeb;
+      }
+
+      ul.s {
+        list-style-type: square;
+      }
+
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .center {
+        text-align: center
+      }
+
+      * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+
+      .mainContent * {
+        border: 1vmin solid gold
+      }
+
+      div.gallery {
+        border: 4px solid #8a0031;
+      }
+
+      div.gallery:hover {
+        border: 8px solid #ff1e6c;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+        color: white
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      h1.thick {
+        border-style: double;
+        border-width: 15px;
+      }
+
+      h1 {text-align: center;}
+      h1.double {border-style: double;}
+
+      .box {
+        background-color: #ff66a2;
+        color: #fedeeb;
+        border: 6px solid white;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .bg {
+        background-image: url("32721.jpg");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .bg2 {
+        background-image: url("sakura_PNG34.png");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1 class="thick">
+      Sakura Themed Food!
+    </h1>
+
+    <div class="bg"></div>
+
+    <div class="box">
+      <h3> About Cherry Blossoms...</h3>
+      <p> A cherry blossom is the flower from a Prunus tree, of which there are many different kinds. Japan is particularly famous for its cherry blossom due its large number of varieties and the nationwide celebrations during the blooming season. As the buds burst open in parks and streets across the country, people throw picnic and hanami (flower viewing) parties to appreciate the transient beauty of the flowers and welcome in the warmer weather. Cherry blossoms in Japanese are known as sakura and it would not be an exaggeration to say they are a national obsession. Different varieties of cherry blossoms bloom at different times, but most hit their peak in Tokyo at the end of March to the beginning of April. During this season, the atmosphere changes. Just like spring brings the promise of new life and new beginnings, the soft scent of blossom brings a vibrancy and optimism to the streets. </p>
+    </div>
+
+    <div class="box">
+      <h3>During spring in Japan...</h3>
+      <p>Beautiful cherry blossom trees blossom into a wonderful sea of pink. For each cherry blossom viewings, there comes a lot of sakura themed foods to enjoy!</p>
+    </div>
+
+    <div class="box">
+      <h3>More Websites...</h3>
+        <ul class="s">
+          <li><a href="https://www.gotokyo.org/en/story/guide/the-japanese-cherry-blossom-trees/index.html">All you need to know about Sakura - the Japanese Cherry Blossom trees </a></li>
+          <li><a href="https://jw-webmagazine.com/sakura-food-and-drinks-in-japan-2021/">Sakura Food and Drinks in Japan 2021 </a></li>
+          <li><a href="https://thecreativeadventurer.com/the-best-sakura-food-and-drinks-to-try-in-japan/">The Best Sakura Food and Drinks to try in Japan </a></li>
+        </ul>
+      </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="20200416_15870508721011_mobile.jpg">
+          <img src="20200416_15870508721011_mobile.jpg" alt="Oreo" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Oreo</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="jw-5d1576323d9193.81261819.jpg">
+          <img src="jw-5d1576323d9193.81261819.jpg" alt="Starbucks" width="600" height="400">
+        </a>
+        <div class="desc">Starbucks Japan's Sakura collection</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="sakurafeature.jpg">
+          <img src="sakurafeature.jpg" alt="Kit Kat" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Kit Kat</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="4456896338_b5a1db38c5_b.jpg">
+          <img src="4456896338_b5a1db38c5_b.jpg" alt="Candies" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Themed Jelly Candied</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="sakuratreats-20170325.jpg">
+          <img src="sakuratreats-20170325.jpg" alt="Pocky" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Flavored Pocky</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="sakura-mochi.jpg">
+          <img src="sakura-mochi.jpg" alt="Mochi" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Mochi</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="E02q7RuVcAEmqvM.jpg">
+          <img src="E02q7RuVcAEmqvM.jpg" alt="Tea" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Lipton Tea</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="Making-instagrammable-cherry-blossom-maki-sushi-rolls.jpg">
+          <img src="Making-instagrammable-cherry-blossom-maki-sushi-rolls.jpg" alt="Sushi" width="600" height="400">
+        </a>
+        <div class="desc">Sakura Sushi</div>
+      </div>
+    </div>
+
+    <div class="bg2"></div>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
